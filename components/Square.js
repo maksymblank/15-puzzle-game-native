@@ -33,9 +33,9 @@ const styles = StyleSheet.create({
         borderRadius: 5,
     },
     buttonText: {
-        fontSize: 40,
+        fontSize: 36,
         textAlign: 'center',
         color: '#fff',
-        lineHeight: 70
+        lineHeight: 64
     }
   });

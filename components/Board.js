@@ -135,15 +135,14 @@ export default class Board extends React.Component{
                     {this.state.squares.map((v, i) => <Square position={[Math.floor(i / this.props.size), i % this.props.size]} onSwitch={(key) => this.onSwitchHandler(key)} key={i} value={v} />)}
                 </View>
                 <View style={{
-                    width: 300,
-                    height: 40,
+                    width: 302,
                     marginTop: 30,
                     flexDirection: 'row',
                     justifyContent: 'space-around',
                     alignItems: 'center',
                 }}>
-                    <Button onPress={this.solve.bind(this)} titleStyle={{fontSize: 24}} buttonStyle={{height: 48, width: 120}} title="Solve" />
-                    <Button onPress={this.shuffle.bind(this)} titleStyle={{fontSize: 24}} buttonStyle={{height: 48, width: 120, backgroundColor: '#CD7C25'}} title="Shuffle" />
+                    <Button onPress={this.solve.bind(this)} titleStyle={{fontSize: 24}} buttonStyle={{height: 56, width: 120}} title="Solve" />
+                    <Button onPress={this.shuffle.bind(this)} titleStyle={{fontSize: 24}} buttonStyle={{height: 56, width: 120, backgroundColor: '#CD7C25'}} title="Shuffle" />
                 </View>
             </View>
         )
